@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const Counter = () => {
@@ -9,7 +9,6 @@ const Counter = () => {
   }
 
   return (
-    
     <div className="App" onClick={incrementCount}>
       {count}
     </div>
