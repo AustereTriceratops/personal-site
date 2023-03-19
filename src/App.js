@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+const Counter = () => {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -8,10 +9,22 @@ function App() {
   }
 
   return (
+    
     <div className="App" onClick={incrementCount}>
       {count}
     </div>
   );
+}
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" />
+        <Route path="/test" element={<Counter/>} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
