@@ -1,10 +1,17 @@
 body {
   background-color: rgb(49, 53, 53);
   color: white;
-  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  margin: 80px;
+  margin-left: 140px;
+  margin-right: 140px;
+  height: 100px;
 }
