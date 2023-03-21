@@ -5,7 +5,7 @@ import { FRAGMENT_SHADER } from './shader'
 import { mainProps } from './types';
 
 export default class Main {
-    props;
+    props: mainProps;
     uniforms;
 
     aspect = window.innerWidth / window.innerHeight;
@@ -15,7 +15,6 @@ export default class Main {
     scene: THREE.Scene;
     camera: THREE.OrthographicCamera;
     renderer: THREE.WebGLRenderer;
-    gridHighlights: THREE.Group;
     
     constructor(props: mainProps) {
         this.props = props;
