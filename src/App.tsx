@@ -1,26 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const incrementCount = () => {
-    setCount(count + 1)
-  }
-
-  return (
-    <div className="App" onClick={incrementCount}>
-      {count}
-    </div>
-  );
-}
+import EscapeFractal from "./escape-fractal/EscapeFractal";
+import Counter from './home/home'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" />
-        <Route path="/test" element={<Counter/>} />
+        <Route path="/" element={<Counter/>} />
+        <Route path="/escapefractal" element={<EscapeFractal/>}/>
       </Routes>
     </BrowserRouter>
   )
